@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    border: none;
+    padding: 0;
+    font-family: sans-serif;
+    color: black;
+}
+.heading{
+    margin: 0;
+    border: none;
+    background: slateblue;
+    padding:20px;
+    color: white;
+}
+.heading-anchor{
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+.heading-text-left{
+    float: left;
+    color:white;
+}
+.heading-text-right{
+    color: white;
+    padding-left: 65%;
+    padding-right: 10px;
+}
+#edit-details-form{
+    text-align: center;
+    width: 60%;
+    margin: 5% auto 0;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: lighter;
+}
+.edit-details-list{
+    display:block;
+    padding:20px 0;
+    height: 25px;
+}
+.body-field{
+    float:left;
+    font-size:15px;
+    width: 30%;
+    margin-right:10%;
+    margin-top: 6px;
+    text-align: right;
+    color: gray;
+}
+.body-value{
+    width: 60%;
+    font-size:15px; 
+    text-align:left;
+    float: left;
+    font-weight: lighter;
+}
+input[type="submit"]{
+    float:left;
+    margin-right:10%;
+    margin-top: 6px;
+    padding: 10px 50px 10px 50px;
+    background: salmon;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    font-size: 15px;
+}
+#nochange{
+    background: lightgray;
+    border: none;
+}
+input[type="text"]{
+    text-align:left;
+    position: relative;
+    padding:3.5%;
+    font-weight:200;
+    font-size: 16px;
+    border-radius: 4px;
+    border:1px solid #5E6673;
+    width: 190px;
+}
+#discard{
+    font-size: 20px;
+}
+select{
+    text-align:left;
+    position: relative;
+    padding:3.5%;
+    width: 225px;
+    height: 50px;    
+    font-weight:200;
+    font-size: 16px;
+    border-radius: 4px;
+    border:1px solid #5E6673;
+}
+
+
