@@ -1,0 +1,32 @@
+<%-- any content can be specified here e.g.: --%>
+<%@page import="java.io.PrintWriter"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="Data.Person"%>
+<%@page import="Data.User"%>
+<%@ page pageEncoding="UTF-8" %>
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/headercss.css">
+</head>
+<%
+response.setHeader("Cache-Control","no-store");
+HttpSession sessionDetails=request.getSession();
+User user=(User) sessionDetails.getAttribute("user");
+RequestDispatcher rd = request.getRequestDispatcher("login");
+PrintWriter printWriter = response.getWriter();
+    if(user==null){
+        printWriter.println("Session ended.Please <a href='Login.jsp'>Login</a> again");
+        rd.include(request, response);
+    } else { 
+     %>
+    <div class="heading">
+    <span class="heading-text-left">
+        <a class="heading-anchor" href="Directory"> Space Portal </a>
+    </span>
+    <span class="heading-text-right">
+        Hi,<%=user.getUserName()%>
+    </span>
+        <a class="heading-anchor" href="Deactivate.jsp">DeactivateAccount</a>
+        <a class="heading-anchor" href="Logout.jsp">Log out</a>
+    </div>
+<% } %>
+            

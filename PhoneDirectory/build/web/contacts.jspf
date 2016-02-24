@@ -1,0 +1,52 @@
+<%-- any content can be specified here e.g.: --%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="Data.User"%>
+<%@page import="Data.Person"%>
+<%@page import="Data.Address"%>
+<%@page import="Data.Phone"%>
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="detailsPhoneTable">
+    <h1> Contacts </h1>
+        <%
+            ArrayList<Person> persons;
+            persons= user.getContacts();
+            if(persons.isEmpty()){
+        %>
+            <h3> No records </h3>    
+        <%}
+            else{
+        %>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th></th>
+                </tr>
+                <%
+                    for(Person person : persons){
+                %>
+                
+                    <tr>
+                    <td><%=person.getName()%></td>
+                    <% Address contactAddress = person.getAddress(); %>
+                    <td><%= contactAddress==null?"NA":contactAddress.toString()%></td>
+                    <td>
+                        <%for(Phone phoneNumber : person.getPhoneNumbers()){%>
+                        <%= phoneNumber.toString()%>
+                        <%}%>
+                    </td>
+                    <td>
+                        <form method="get" action="editContact">
+                            <input type="hidden" name="contactId" value="<%=person.getContactId()%>" >
+                            <input type="submit" value ="Edit">
+                        </form>
+                    </td>
+                    </tr>
+                <%}%>
+            </table>
+        <%
+            }
+        %>
+</div>

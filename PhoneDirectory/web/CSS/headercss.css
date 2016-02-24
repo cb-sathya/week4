@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    border: none;
+    padding: 0;
+    font-family: sans-serif;
+    color: black;
+}
+.heading{
+    margin: 0;
+    border: none;
+    background: slateblue;
+    padding:20px;
+    color: white;
+}
+.heading-anchor{
+    color: white;
+    text-decoration: none;
+    padding-left: 15px;
+}
+.heading-text-left{
+    float: left;
+    color:white;
+}
+.heading-text-right{
+    color: white;
+    padding-left: 65%;
+    padding-right: 10px;
+}
+

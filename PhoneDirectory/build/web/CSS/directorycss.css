@@ -1,0 +1,83 @@
+#details-form{
+    align-content: center;
+    text-align: center;
+    width: 60%;
+    margin: 5% auto 0;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+}
+button{
+    margin: 1% 40% 0 45%;
+    padding: 10px 50px 10px 50px;
+    background: salmon;
+    border: 1px solid salmon;
+    color: white;
+    border-radius: 5px;
+}
+.detailsPhoneTable{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    text-align: center;
+}
+
+.detailsPhoneTable table{
+    width:100%;
+}
+
+.detailsPhoneTable table form input[type="submit"]{
+    width: 75%;
+    background: #8792fc;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    outline: none;
+    border-radius: 3px;
+    border: 0.5px;
+    font-size: small;
+}
+
+.detailsForm form input [type="text"]{
+    text-align:left;
+    position: relative;
+    width:35%;
+    padding:5%;
+    margin-right: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-size: 16px;
+    border-radius: 4px;
+    border:1px solid #5E6673;
+}
+.textclass{
+    text-align:left;
+    position: relative; 
+    margin-left:5%;
+    margin-right: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-size: 16px;
+    border-radius: 4px;
+    border:1px solid #5E6673;
+}
+.submitclass{
+    margin: 1% 0 0 0;
+    padding: 4px 20px 5px 20px;
+    background: salmon;
+    border: 1px solid salmon;
+    color: white;
+    border-radius: 5px;
+}
+th{
+    background: #8792fc;
+    height:50px;
+    color: white;
+}
+tr{
+    background: #eeeeee;
+    height:50px;
+}
+
