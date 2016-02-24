@@ -28,8 +28,8 @@
                     <input type ="text" class="textclass" name="phone" placeholder="Match by phone">
                     <input type="submit" class="submitclass" value="Submit">
                 </form>
-                <a href="AddContact.jsp"><button>Add Contact</button></a>
             </div>
-        <%@include file="contacts.jspf"%>        
+        <%@include file="contacts.jspf"%> 
+        <a href="AddContact.jsp"><button>Add Contact</button></a>
     </body>
 </html>

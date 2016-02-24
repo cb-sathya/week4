@@ -31,7 +31,7 @@ button{
 
 .detailsPhoneTable table form input[type="submit"]{
     width: 75%;
-    background: #8792fc;
+    background: salmon;
     font-family: 'Open Sans', sans-serif;
     color: #FFF;
     outline: none;

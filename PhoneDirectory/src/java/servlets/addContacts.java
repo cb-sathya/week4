@@ -66,7 +66,6 @@ public class addContacts extends HttpServlet {
         User user= (User) session.getAttribute("user");
         if(user!=null){
             PrintWriter out = response.getWriter();
-            RequestDispatcher reqDis=request.getRequestDispatcher("Directory");
             String firstName=request.getParameter("firstName");
             String lastName=request.getParameter("lastName");
             String contactId=request.getParameter("contactId");
@@ -81,8 +80,7 @@ public class addContacts extends HttpServlet {
             String mobile=request.getParameter("Mobile");
             try{
                 dataBase.updateContact(firstName,lastName,contactId,addressLine1,addressLine2,city,state,ZIP,country,home,work,mobile);
-                reqDis.include(request, response);
-                out.print("<center>Address added successfully</center>");
+                response.sendRedirect("Directory");
             }catch(Exception e){
                 e.printStackTrace();
             }

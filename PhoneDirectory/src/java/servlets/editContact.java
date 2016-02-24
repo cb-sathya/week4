@@ -85,9 +85,7 @@ public class editContact extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
         HttpSession httpSession = request.getSession();
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/EditContact.jsp");
         User user = (User) httpSession.getAttribute("user");
         String contactId = request.getParameter("contactId");
         try{
